@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service</title>
+  <title>Portfolio Details - eBusiness Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="service-details-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -48,15 +48,16 @@
       </a>
 
       <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">Soluciones</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#portfolio">KPIs</a></li>
+        <li><a href="#contact">contacto</a></li>
+      </ul>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -65,102 +66,141 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container position-relative">
-        <h1>Logística y Cadena de Suministro</h1>
-        <p>Control de Producción: Asegurando la Eficiencia y la Calidad en Cada Paso</p>
+        <h1>OEE</h1>
+        <p>Overall Equipment Effectiveness mide la eficiencia de los equipos considerando disponibilidad, rendimiento y calidad</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Logística y Cadena de Suministro</li>
+            <li class="current">OEE</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container">
+      <div class="container" data-aos="fade-up">
 
-        <div class="row gy-5">
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-1.webp" alt="">
+            </div>
 
-            <div class="service-box">
-              <h4>Servicios</h4>
-              <div class="services-list">
-                <a href="service-details-PP.html"><i class="bi bi-arrow-right-circle"></i><span>Planificacion de Produccion</span></a>
-                <a href="service-details-CP.html"><i class="bi bi-arrow-right-circle"></i><span>Control de Produccion</span></a>
-                <a href="service-details-MI.html"><i class="bi bi-arrow-right-circle"></i><span>Mantenimiento Industrial</span></a>
-                <a href="service-details-CC.html"><i class="bi bi-arrow-right-circle"></i><span>Control de Calidad</span></a>
-                <a href="service-details-T.html"><i class="bi bi-arrow-right-circle"></i><span>Trazabilidad</span></a>
-                <a href="service-details-LCS.html"><i class="active"></i><span>Logística y Cadena de Suministro</span></a>
-              </div>
-            </div><!-- End Services List -->
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-10.webp" alt="">
+            </div>
 
-            
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-7.webp" alt="">
+            </div>
 
-            <div class="help-box d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-headset help-icon"></i>
-              <h4>Preguntas?</h4>
-              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+1 5589 55488 55</span></p>
-              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">contact@example.com</a></p>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-4.webp" alt="">
             </div>
 
           </div>
-
-          <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/trazabilidad.png" alt="" class="img-fluid services-img">
-            <h3>🚚 ¿Qué es la Logística y Cadena de Suministro?</h3>
-              <p>
-              La logística y cadena de suministro abarcan la planificación, gestión y control de todos los procesos necesarios para que un producto llegue desde su origen hasta el cliente final. Esto incluye aprovisionamiento, almacenamiento, transporte, distribución y coordinación entre todos los actores involucrados.
-              </p>
-              <p>
-              Una cadena de suministro eficiente asegura que el producto correcto llegue al lugar correcto, en el momento adecuado y con el costo óptimo.
-              </p>
-
-              <h3>📌 ¿Por qué tu empresa lo necesita?</h3>
-              <p>
-              Optimizar la logística y cadena de suministro es clave para mejorar la competitividad y la rentabilidad:
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle"></i> <span>Reduce costos de transporte y almacenamiento.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Evita faltantes o excesos de inventario.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Mejora los tiempos de entrega.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Incrementa la satisfacción del cliente.</span></li>
-              </ul>
-
-              <h3>⚙️ Cómo lo implementamos en tu empresa</h3>
-              <p>
-              Evaluamos tus procesos logísticos actuales y detectamos cuellos de botella. Diseñamos un plan de mejora que incluye rutas de transporte optimizadas, gestión inteligente de inventarios y sistemas de seguimiento en tiempo real. Además, coordinamos a proveedores y distribuidores para asegurar un flujo continuo y eficiente.
-              </p>
-
-              <h3>📊 Herramientas y métricas que usamos</h3>
-              <ul>
-                <li><i class="bi bi-check-circle"></i> <span>Sistemas WMS (Warehouse Management System) para gestión de almacenes.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>ERP integrado para control total de compras, ventas e inventarios.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Software de optimización de rutas de transporte.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>KPI como nivel de servicio, lead time, costos logísticos y rotación de inventario.</span></li>
-              </ul>
-
-              <h3>🚀 Beneficios directos para tu empresa</h3>
-              <ul>
-                <li><i class="bi bi-check-circle"></i> <span>Mayor rentabilidad gracias a la reducción de costos operativos.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Clientes más satisfechos gracias a entregas rápidas y precisas.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Menor riesgo de interrupciones en la producción.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Mayor control sobre la cadena de suministro.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Capacidad de respuesta rápida ante cambios en la demanda.</span></li>
-              </ul>
-          </div>
-
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
         </div>
 
-      </div>
+      <div class="row justify-content-between gy-4 mt-4">
 
-    </section><!-- /Service Details Section -->
+  <div class="col-lg-8" data-aos="fade-up">
+    <div class="portfolio-description">
+      <h2>OEE — Eficiencia Global de los Equipos</h2>
+
+      <p>
+        El <strong>OEE (Overall Equipment Effectiveness)</strong> mide qué tan bien se aprovecha un equipo o línea considerando
+        <strong>Disponibilidad</strong>, <strong>Rendimiento</strong> y <strong>Calidad</strong>. Sirve para encontrar pérdidas, comparar
+        turnos/líneas y priorizar mejoras en fábrica.
+      </p>
+
+      <h2>¿Qué mide?</h2>
+      <ul>
+        <li><strong>Disponibilidad:</strong> si la máquina está operando cuando debería.</li>
+        <li><strong>Rendimiento:</strong> si produce a la velocidad objetivo (ciclo ideal).</li>
+        <li><strong>Calidad:</strong> cuántas unidades buenas entrega respecto al total.</li>
+      </ul>
+
+      <h2>Fórmulas</h2>
+      <ul>
+        <li><strong>OEE</strong> = Disponibilidad × Rendimiento × Calidad</li>
+        <li><strong>Disponibilidad</strong> = Tiempo Operativo / Tiempo Planificado</li>
+        <li><strong>Rendimiento</strong> = (Unidades Totales × Tiempo de Ciclo Ideal) / Tiempo Operativo</li>
+        <li><strong>Calidad</strong> = Unidades Buenas / Unidades Totales</li>
+      </ul>
+
+      <h2>Cómo calcular (pasos)</h2>
+      <ol>
+        <li>Define <em>Tiempo planificado</em> del equipo (excluye paros planificados si así lo usas).</li>
+        <li>Resta paros no planificados → obtén <em>Tiempo operativo</em>.</li>
+        <li>Cuenta <em>unidades totales</em> y <em>buenas</em>; registra <em>scrap</em> y <em>retraba jo</em>.</li>
+        <li>Usa el <em>Tiempo de ciclo ideal</em> (no el promedio real).</li>
+        <li>Calcula Disponibilidad, Rendimiento, Calidad y finalmente el OEE.</li>
+      </ol>
+
+      <h2>Ejemplo rápido</h2>
+      <p>
+        Turno: <strong>480 min</strong>; paros no planificados: <strong>60 min</strong> → Tiempo operativo: <strong>420 min</strong>.<br>
+        Ciclo ideal: <strong>0.5 min/unidad</strong>. Producidas: <strong>700</strong> (buenas: <strong>680</strong>).<br>
+        Disponibilidad = 420 / 480 = <strong>87.5%</strong><br>
+        Rendimiento = (700 × 0.5) / 420 = <strong>83.3%</strong><br>
+        Calidad = 680 / 700 = <strong>97.1%</strong><br>
+        <strong>OEE ≈ 70.8%</strong>
+      </p>
+
+      <h2>Buenas prácticas</h2>
+      <ul>
+        <li>Medir por <em>equipo/línea/turno</em> y visualizar tendencias por día/semana.</li>
+        <li>Hacer <em>Pareto de pérdidas</em>: paros, microparos, velocidad, scrap, reproceso.</li>
+        <li>Usar el OEE para priorizar acciones: SMED (cambios rápidos), TPM, estandarización, balanceo de línea.</li>
+      </ul>
+
+      <h2>Errores comunes</h2>
+      <ul>
+        <li>Usar ciclo promedio en lugar de <strong>ciclo ideal</strong>.</li>
+        <li>Contar piezas reprocesadas como <strong>buenas</strong> sin control.</li>
+        <li>Mezclar paros planificados/no planificados sin criterio consistente.</li>
+      </ul>
+
+      <h2>Objetivo de referencia</h2>
+      <p>
+        Muchas plantas toman como meta exigente un OEE cercano a <strong>≈ 85%</strong> (según industria, mix y madurez).
+        Lo importante es <strong>mejorar tendencia</strong> y atacar la mayor pérdida primero.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+    </section><!-- /Portfolio Details Section -->
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+ <footer id="footer" class="footer dark-background">
 
   <!-- Sección de Contacto -->
   <div class="container footer-top">

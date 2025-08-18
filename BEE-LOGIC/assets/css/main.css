@@ -67,10 +67,9 @@ body {
 }
 
 .logo-image-beelogic {
-      width: 50px;
-      height: 50px;
-      object-fit: contain;
-      size: 10px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 
 
@@ -1035,7 +1034,7 @@ section,
 
 @media (max-width: 992px) {
   .about .about-title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -2549,6 +2548,34 @@ section,
 
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
+}
+
+/* ===== Ajuste de tamaño para imágenes en portfolio-details ===== */
+#portfolio-details .portfolio-details-slider {
+  max-width: 820px;      /* Ajusta el ancho total del slider */
+  margin: 0 auto;        /* Centrado */
+}
+
+#portfolio-details .swiper-wrapper {
+  align-items: center;
+}
+
+#portfolio-details .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio-details .swiper-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;      /* Limita la altura máxima */
+  object-fit: contain;   /* Mantiene la proporción sin recortar */
+}
+
+@media (max-width: 991.98px) {
+  #portfolio-details .portfolio-details-slider {
+    max-width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>KPI Tasa de Defecto - BeeLogic</title>
+  <meta name="description" content="Guía práctica del KPI Tasa de Defecto: qué es, cómo se mide, fórmulas (DPU, DPMO), ejemplo, buenas prácticas y metas recomendadas para manufactura.">
+  <meta name="keywords" content="Tasa de defecto, defect rate, DPU, DPMO, scrap, retrabajo, KPIs de calidad, OEE, manufactura, BeeLogic">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename"><span>BEE</span>LOGIC</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">Soluciones</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio">KPIs</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Tasa de Defecto — Defect Rate</h1>
+        <p>Mide el porcentaje de unidades no conformes y su impacto en desperdicio, costo y satisfacción del cliente.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">KPIs / Tasa de Defecto</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": { "delay": 5000 },
+              "slidesPerView": "auto",
+              "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" },
+              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }
+            }
+          </script>
+
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-1.webp" alt="Inspección visual detectando defectos en línea de producción">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-10.webp" alt="Registro digital de no conformidades y retrabajos en QMS/MES">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-7.webp" alt="Dashboard con Tasa de Defecto, DPU y Pareto de causas">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-4.webp" alt="Verificación final y segregación de producto no conforme">
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Tasa de Defecto (Defect Rate)</h2>
+
+              <p>
+                La <strong>Tasa de Defecto</strong> indica qué proporción de tu producción resulta <em>no conforme</em> frente a los
+                criterios de calidad establecidos. Es un KPI clave para visibilizar <strong>scrap</strong> (rechazo) y
+                <strong>retrabajo</strong>, cuantificar pérdidas y priorizar mejoras. Complementa al
+                <strong>Índice de Calidad</strong> y afecta el factor <strong>Calidad del OEE</strong>.
+              </p>
+
+              <h3>¿Qué mide exactamente?</h3>
+              <p>Cuantifica la presencia de producto defectuoso y su naturaleza:</p>
+              <ul>
+                <li><strong>Unidad defectuosa</strong>: pieza que no cumple especificación (sea rechazada o retrabajada).</li>
+                <li><strong>Defecto</strong>: una no conformidad específica; una unidad puede tener <em>varios</em> defectos.</li>
+                <li><strong>Tipos</strong>: rechazo (scrap), retrabajo, defecto interno (detectado en planta) y externo (en cliente).</li>
+                <li><strong>Granularidad</strong>: por línea, turno, producto, proveedor, máquina o lote.</li>
+                <li><strong>Consistencia</strong>: acordar si el retrabajo se cuenta como defecto a efectos de Tasa (recomendado sí) y reportar
+                  <em>rechazo</em> y <em>retrabajo</em> por separado.</li>
+              </ul>
+
+              <h3>Fórmulas clave</h3>
+              <ul>
+                <li><strong>Tasa de Defecto (%)</strong> = (Unidades defectuosas / Unidades totales) × 100</li>
+                <li><strong>Tasa de Rechazo (%)</strong> = (Unidades rechazadas / Unidades totales) × 100</li>
+                <li><strong>Tasa de Retrabajo (%)</strong> = (Unidades retrabajadas / Unidades totales) × 100</li>
+                <li><strong>DPU (Defects Per Unit)</strong> = Nº total de defectos / Unidades inspeccionadas</li>
+                <li><strong>DPMO</strong> = (Defectos / (Unid. inspeccionadas × Oportunidades por unidad)) × 1,000,000</li>
+                <li><strong>Factor Calidad (OEE)</strong> = (Unidades buenas / Unidades totales)</li>
+              </ul>
+              <p>
+                <em>Nota:</em> para exponer pérdidas ocultas, muchas plantas consideran <strong>buenas</strong> solo las unidades
+                que pasan <strong>a la primera</strong> (sin reproceso) en el cálculo del OEE, y reportan el retrabajo aparte.
+              </p>
+
+              <h3>Ejemplo rápido</h3>
+              <p>En un turno se producen 1,200 unidades:</p>
+              <ul>
+                <li>Rechazadas (scrap): 24</li>
+                <li>Retrabajadas: 36</li>
+                <li>Nº total de defectos encontrados: 80</li>
+                <li>Oportunidades de defecto por unidad: 5</li>
+              </ul>
+              <p>
+                <strong>Unidades defectuosas</strong> = 24 + 36 = 60<br>
+                <strong>Tasa de Defecto</strong> = 60 / 1,200 = <strong>5%</strong><br>
+                <strong>Tasa de Rechazo</strong> = 24 / 1,200 = <strong>2%</strong><br>
+                <strong>Tasa de Retrabajo</strong> = 36 / 1,200 = <strong>3%</strong><br>
+                <strong>DPU</strong> = 80 / 1,200 = <strong>0.0667</strong><br>
+                <strong>DPMO</strong> = (80 / (1,200 × 5)) × 1,000,000 = <strong>13,333</strong><br>
+                <strong>Factor Calidad (OEE)</strong> (si solo descuentas rechazo) = (1,200 − 24) / 1,200 = <strong>98%</strong>
+              </p>
+
+              <h3>Buenas prácticas para reducirla</h3>
+              <ul>
+                <li><strong>Poka-Yoke & verificación en línea</strong>: previene errores y evita acumulación de NC.</li>
+                <li><strong>SPC (Control Estadístico de Proceso)</strong>: controla variación y actúa antes del desvío (Cp/Cpk).</li>
+                <li><strong>PFMEA & Plan de Control</strong>: prioriza modos de falla críticos y define controles robustos.</li>
+                <li><strong>Pareto de defectos</strong> y <strong>8D/RCFA</strong>: elimina causas raíz de los <em>top 3</em> defectos.</li>
+                <li><strong>Auditorías en capas (LPA)</strong> y <strong>estandarización</strong> con trabajo visual.</li>
+                <li><strong>Calidad de proveedores</strong>: PPAP, AQL de recepción, retroalimentación y planes de mejora.</li>
+                <li><strong>Datos y trazabilidad</strong>: captura en MES/QMS por lote, parámetro, operario y máquina.</li>
+                <li><strong>Calibración y mantenimiento</strong> de equipos de medición y estaciones críticas.</li>
+              </ul>
+
+              <h3>Metas de referencia</h3>
+              <ul>
+                <li><strong>Tasa de Defecto interna &lt; 2%</strong> en procesos maduros; aspiracional &lt; 1% (depende del producto).</li>
+                <li><strong>DPU &lt; 0.05</strong> como objetivo inicial en líneas estables.</li>
+                <li><strong>PPM externo</strong> (&lt; 500, &lt; 50 en sectores exigentes); <strong>DPMO</strong> bajo como norte Six Sigma.</li>
+                <li><strong>Reducción trimestral</strong> del scrap y retrabajo (p. ej., −15% QoQ) focalizada en los defectos críticos.</li>
+              </ul>
+
+              <p>
+                En síntesis, bajar la Tasa de Defecto disminuye el costo unitario, libera capacidad productiva y mejora la
+                reputación frente al cliente. Con disciplina de datos, prevención y estandarización, la calidad se vuelve un
+                diferenciador competitivo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+  <!-- Sección de Contacto -->
+  <div class="container footer-top">
+    <div class="row gy-4">
+
+      <!-- Información de la Empresa -->
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="d-flex align-items-center">
+          <span class="sitename">BeeLogic</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>San José, Costa Rica</p>
+          <p>Av. Central, Edificio Empresarial</p>
+          <p class="mt-3"><strong>Teléfono:</strong> <span>+506 2222-2222</span></p>
+          <p><strong>Email:</strong> <span>contacto@beelogic.com</span></p>
+        </div>
+      </div>
+
+      <!-- Enlaces útiles -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Enlaces Útiles</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="about.html">Soluciones</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="services.html">Servicios</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="services.html">KPIs</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Servicios -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Nuestros Servicios</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">MRP Integrado a la Producción Real</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Compras Integradas al Proceso Productivo</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Analítica y KPIs en Tiempo Real</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Gestión de Documentos y Cambios de Ingeniería</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="col-lg-4 col-md-12">
+        <h4>Síguenos</h4>
+        <p>Mantente conectado en nuestras redes sociales oficiales.</p>
+        <div class="social-links d-flex">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Derechos reservados -->
+  <div class="container text-center mt-4">
+    <p>© 2025 <strong>BeeLogic</strong>. Todos los derechos reservados.</p>
+    <p><a href="privacy.html">Política de Privacidad</a> | <a href="terms.html">Términos y Condiciones</a></p>
+  </div>
+
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
