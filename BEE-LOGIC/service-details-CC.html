@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Control de Calidad</title>
+  <meta name="description" content="Control de Calidad en manufactura: evolución histórica, integración con procesos clave e Industria 4.0 para garantizar productos conformes y clientes satisfechos.">
+  <meta name="keywords" content="control de calidad, QC, ISO 9001, SPC, Industria 4.0, visión artificial, trazabilidad, ERP, MRP, MES">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,14 +26,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: eBusiness
-  * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-  * Updated: Jun 23 2025 with Bootstrap v5.3.6
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="service-details-page">
@@ -42,17 +34,15 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename"><span>BEE</span>LOGIC</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services" class="active">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -66,7 +56,7 @@
     <div class="page-title dark-background">
       <div class="container position-relative">
         <h1>Control de Calidad</h1>
-        <p>Control de Producción: Asegurando la Eficiencia y la Calidad en Cada Paso</p>
+        <p>Garantía de conformidad, trazabilidad y mejora continua en toda la cadena de valor.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -74,161 +64,182 @@
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End Page Title -->
 
     <!-- Service Details Section -->
     <section id="service-details" class="service-details section">
-
       <div class="container">
-
         <div class="row gy-5">
 
+          <!-- Sidebar -->
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
 
             <div class="service-box">
               <h4>Servicios</h4>
               <div class="services-list">
-                <a href="service-details-PP.html"><i class="bi bi-arrow-right-circle"></i><span>Planificacion de Produccion</span></a>
-                <a href="service-details-CP.html"><i class="bi bi-arrow-right-circle"></i><span>Control de Produccion</span></a>
+                <a href="service-details-PP.html"><i class="bi bi-arrow-right-circle"></i><span>Planificación de Producción</span></a>
+                <a href="service-details-CP.html"><i class="bi bi-arrow-right-circle"></i><span>Control de Producción</span></a>
                 <a href="service-details-MI.html"><i class="bi bi-arrow-right-circle"></i><span>Mantenimiento Industrial</span></a>
-                <a href="service-details-CC.html"><i class="active"></i><span>Control de Calidad</span></a>
+                <a href="service-details-CC.html" class="active"><i class="bi bi-arrow-right-circle"></i><span>Control de Calidad</span></a>
                 <a href="service-details-T.html"><i class="bi bi-arrow-right-circle"></i><span>Trazabilidad</span></a>
                 <a href="service-details-LCS.html"><i class="bi bi-arrow-right-circle"></i><span>Logística y Cadena de Suministro</span></a>
               </div>
-            </div><!-- End Services List -->
-
-            
+            </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
-              <h4>Preguntas?</h4>
-              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+1 5589 55488 55</span></p>
-              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">contact@example.com</a></p>
+              <h4>¿Preguntas?</h4>
+              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+506 2222-2222</span></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contacto@beelogic.com">contacto@beelogic.com</a></p>
             </div>
 
           </div>
+          <!-- /Sidebar -->
 
+          <!-- Content -->
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/controlcalidad.webp" alt="" class="img-fluid services-img">
+            <img src="assets/img/controlcalidad.webp" alt="Control de Calidad en manufactura" class="img-fluid services-img">
+
+            <!-- Definición (mantengo tu bloque) -->
             <h3>🔍 ¿Qué es el Control de Calidad?</h3>
             <p>
-            El control de calidad es el proceso de verificar y asegurar que los productos fabricados cumplan con los estándares y especificaciones establecidos. Su objetivo principal es garantizar que el cliente reciba un producto sin defectos, confiable y con el nivel de calidad prometido.
-            </p>            
-            <p>
-            En un entorno industrial, el control de calidad no solo implica inspeccionar el producto final, sino también monitorear y mejorar cada etapa de la producción para prevenir errores antes de que ocurran.
+              El control de calidad verifica y asegura que los productos cumplan con los estándares y especificaciones establecidas. No es solo inspeccionar al final: implica prevenir defectos monitoreando y mejorando cada etapa del proceso.
             </p>
-            <h3>🔍¿Por qué tu empresa lo necesita?</h3>
+
+            <!-- NUEVO: Evolución histórica (del docx) -->
+            <h3>Evolución Histórica del Control de Calidad</h3>
+            <ul>
+              <li><strong>Inspección manual:</strong> Verificación al final del proceso, alta dependencia del ojo humano.</li>
+              <li><strong>Control Estadístico de Calidad (SPC):</strong> Métodos estadísticos para evaluar procesos y reducir variabilidad.</li>
+              <li><strong>TQM e ISO:</strong> Enfoque integral con normas internacionales y cultura de calidad en todas las áreas.</li>
+              <li><strong>Sistemas integrados:</strong> Calidad conectada a ERP y producción, con monitoreo continuo y trazabilidad.</li>
+              <li><strong>Industria 4.0:</strong> Automatización de inspecciones, sensores y análisis en tiempo real con IA/big data.</li>
+            </ul>
+
+            <!-- Tu bloque de “por qué lo necesitas” se queda -->
+            <h3>🔍 ¿Por qué tu empresa lo necesita?</h3>
+            <p>Un control de calidad efectivo evita pérdidas y conflictos con clientes:</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Reducción de devoluciones y reclamos.</li>
+              <li><i class="bi bi-check-circle"></i> Mayor confianza del cliente.</li>
+              <li><i class="bi bi-check-circle"></i> Prevención de incumplimientos normativos.</li>
+            </ul>
+            <p>Con un sistema sólido:</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Detectas fallas a tiempo y evitas retrabajos.</li>
+              <li><i class="bi bi-check-circle"></i> Aseguras consistencia del producto (ISO 9001, sectoriales).</li>
+            </ul>
+
+            <!-- NUEVO: Integración con procesos (del docx) -->
+            <h3>Integración con Procesos Clave</h3>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle"></i> <strong>MRP:</strong> Asegura materiales conformes antes de entrar a producción y reduce defectos por insumos.</li>
+                  <li><i class="bi bi-check-circle"></i> <strong>Planificación:</strong> Incorpora puntos de inspección y tiempos de prueba dentro del MPS.</li>
+                  <li><i class="bi bi-check-circle"></i> <strong>Demanda:</strong> Alinea producción conforme con expectativas del cliente para evitar retrabajos.</li>
+                  <li><i class="bi bi-check-circle"></i> <strong>Mantenimiento:</strong> Equipos calibrados reducen errores y variabilidad; previene defectos por fallas mecánicas.</li>
+                  <li><i class="bi bi-check-circle"></i> <strong>Trazabilidad:</strong> Registra inspecciones y no conformidades, facilita auditorías y causa raíz.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- NUEVO: Industria 4.0 aplicada al QC (del docx) -->
+            <h3>Control de Calidad en la Industria 4.0</h3>
+            <ul>
+              <li><strong>Visión artificial y sensores:</strong> Detección de defectos en tiempo real.</li>
+              <li><strong>Big Data y analítica:</strong> Identifica patrones de defecto y optimiza procesos.</li>
+              <li><strong>IA y Machine Learning:</strong> Ajusta parámetros para prevenir no conformidades.</li>
+              <li><strong>Integración ERP/MRP:</strong> Sincroniza materiales, producción y calidad.</li>
+              <li><strong>Gemelos digitales:</strong> Simulan condiciones de fabricación para minimizar errores antes de producir.</li>
+            </ul>
+
+            <!-- Mantengo y ajusto tus bloques -->
+            <h3>⚙️ ¿Cómo lo implementamos en tu empresa?</h3>
             <p>
-              Un control de calidad efectivo ayuda a evitar pérdidas económicas y problemas con los clientes:</p>
+              Diagnosticamos procesos y puntos críticos, definimos plan de inspección por etapa, integramos captura digital (MES) y SPC, y capacitamos al personal. Conexión nativa a ERP/MRP y trazabilidad para cierre de ciclo.
+            </p>
+
+            <h3>📊 Herramientas y métricas</h3>
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Reducción de devoluciones y reclamos por defectos.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Mayor confianza y satisfacción del cliente.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Mejora de la reputación de la marca.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Prevención de problemas legales o incumplimientos de normas.</span></li>
-            </ul>
-            <p>Con un sistema sólido de control de calidad:</p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Detectas fallas a tiempo, evitando retrabajos costosos.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Mejoras la eficiencia de la producción.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Aseguras la consistencia del producto.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Cumples con normativas como ISO 9001 o estándares del sector.</span></li>
+              <li><i class="bi bi-check-circle"></i> SPC en tiempo real y auditorías internas.</li>
+              <li><i class="bi bi-check-circle"></i> % defectos, retrabajos, devoluciones; adherencia a plan de inspección.</li>
+              <li><i class="bi bi-check-circle"></i> Cumplimiento normativo (ISO 9001, sectoriales).</li>
             </ul>
 
-            <h3>⚙️¿Cómo lo implementamos en tu empresa?</h3>
-              <p>
-            Comenzamos con un diagnóstico de tus procesos para identificar los puntos críticos donde pueden aparecer defectos. Implementamos procedimientos de inspección en cada etapa clave, estableciendo parámetros claros y métodos de medición confiables. Incorporamos herramientas estadísticas para el análisis de datos y capacitamos a tu personal en buenas prácticas de control de calidad. Además, podemos integrar sistemas de registro digital para mantener trazabilidad total.
-              </p>
-
-            <h3>📊Herramientas y metricas que usamos</h3>
+            <h3>🚀 Beneficios directos</h3>
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Control Estadístico de Procesos (SPC) para monitoreo en tiempo real.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Indicadores clave como porcentaje de defectos, retrabajos y devoluciones.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Auditorías internas para cumplimiento de estándares.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Certificaciones y normativas internacionales como ISO 9001.</span></li>
-            </ul>
-            <h3>🚀Beneficios directos para tu empresa</h3>
-
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Menos devoluciones y reclamos de clientes.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Mayor satisfacción y fidelidad de los clientes.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Reducción de costos por fallos y desperdicio.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Mejora continua de procesos y productos.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ventaja competitiva frente a otras empresas.</span></li>
+              <li><i class="bi bi-check-circle"></i> Menos devoluciones y mayor satisfacción del cliente.</li>
+              <li><i class="bi bi-check-circle"></i> Reducción de desperdicios y costos por fallos.</li>
+              <li><i class="bi bi-check-circle"></i> Mejora continua y ventaja competitiva.</li>
             </ul>
           </div>
+          <!-- /Content -->
 
         </div>
-
       </div>
-
-    </section><!-- /Service Details Section -->
+    </section>
+    <!-- /Service Details Section -->
 
   </main>
 
   <footer id="footer" class="footer dark-background">
-
-  <!-- Sección de Contacto -->
-  <div class="container footer-top">
-    <div class="row gy-4">
-
-      <!-- Información de la Empresa -->
-      <div class="col-lg-4 col-md-6 footer-about">
-        <a href="index.html" class="d-flex align-items-center">
-          <span class="sitename">BeeLogic</span>
-        </a>
-        <div class="footer-contact pt-3">
-          <p>San José, Costa Rica</p>
-          <p>Av. Central, Edificio Empresarial</p>
-          <p class="mt-3"><strong>Teléfono:</strong> <span>+506 2222-2222</span></p>
-          <p><strong>Email:</strong> <span>contacto@beelogic.com</span></p>
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">BeeLogic</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>San José, Costa Rica</p>
+            <p>Av. Central, Edificio Empresarial</p>
+            <p class="mt-3"><strong>Teléfono:</strong> <span>+506 2222-2222</span></p>
+            <p><strong>Email:</strong> <span>contacto@beelogic.com</span></p>
+          </div>
         </div>
-      </div>
 
-      <!-- Enlaces útiles -->
-      <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Enlaces Útiles</h4>
-        <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="about.html">Soluciones</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="services.html">Servicios</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="services.html">KPIs</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Contacto</a></li>
-        </ul>
-      </div>
-
-      <!-- Servicios -->
-      <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Nuestros Servicios</h4>
-        <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">MRP Integrado a la Producción Real</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Compras Integradas al Proceso Productivo</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Analítica y KPIs en Tiempo Real</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Gestión de Documentos y Cambios de Ingeniería</a></li>
-        </ul>
-      </div>
-
-      <!-- Redes Sociales -->
-      <div class="col-lg-4 col-md-12">
-        <h4>Síguenos</h4>
-        <p>Mantente conectado en nuestras redes sociales oficiales.</p>
-        <div class="social-links d-flex">
-          <a href="#"><i class="bi bi-twitter-x"></i></a>
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Enlaces por Tema</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-details-PP.html">Planificación de Producción</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-details-CP.html">Control de Producción</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-details-MI.html">Mantenimiento Industrial</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-details-CC.html">Control de Calidad</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-details-T.html">Trazabilidad</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-details-LCS.html">Logística y Cadena de Suministro</a></li>
+          </ul>
         </div>
-      </div>
 
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nuestros Servicios</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">MRP Integrado a la Producción Real</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Compras Integradas al Proceso Productivo</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Analítica y KPIs en Tiempo Real</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Gestión de Documentos y Cambios de Ingeniería</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Síguenos</h4>
+          <p>Mantente conectado en nuestras redes sociales oficiales.</p>
+          <div class="social-links d-flex">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
 
-  <!-- Derechos reservados -->
-  <div class="container text-center mt-4">
-    <p>© 2025 <strong>BeeLogic</strong>. Todos los derechos reservados.</p>
-    <p><a href="privacy.html">Política de Privacidad</a> | <a href="terms.html">Términos y Condiciones</a></p>
-  </div>
-
-</footer>
+    <div class="container text-center mt-4">
+      <p>© 2025 <strong>BeeLogic</strong>. Todos los derechos reservados.</p>
+      <p><a href="privacy.html">Política de Privacidad</a> | <a href="terms.html">Términos y Condiciones</a></p>
+    </div>
+  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -250,5 +261,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
