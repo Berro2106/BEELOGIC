@@ -19,11 +19,11 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #f5f6f7; /* Background color for the entire website, including individual sections */
   --default-color: #1a1a1a; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #ffc700; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #f9f9f9; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
@@ -957,6 +957,30 @@ section,
   .hero .hero-content .hero-stats {
     justify-content: center;
   }
+}
+
+.button-wrapper {
+  text-align: center; /* Centra el botón horizontalmente */
+  margin: 30px 0;     /* Espaciado arriba y abajo */
+}
+
+.btn-yellow {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000;
+  font-weight: bold;      /* Texto más gordito */
+  font-size: 1.2rem;      /* Texto más grande */
+  padding: 12px 30px;     /* Espaciado interno */
+  display: inline-block;  /* Para que no ocupe todo el ancho */
+  border-radius: 8px;     /* Bordes redondeados opcionales */
+  
+}
+
+
+.btn-yellow:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
