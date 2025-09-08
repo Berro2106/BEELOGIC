@@ -976,11 +976,27 @@ section,
   
 }
 
-
 .btn-yellow:hover {
   background-color: #e0a800;
   border-color: #d39e00;
   color: #fff;
+}
+
+/* Opcional, estilos de flechas */
+.services-slider .swiper-button-prev,
+.services-slider .swiper-button-next {
+  width: 44px; height: 44px;
+  border-radius: 999px;
+  background: #ffd000; /* amarillo BeeLogic */
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+}
+.services-slider .swiper-button-prev::after,
+.services-slider .swiper-button-next::after {
+  font-size: 18px; color: #111;
+}
+@media (min-width: 992px){
+  .services-slider .swiper-button-prev { left: -6px; }
+  .services-slider .swiper-button-next { right: -6px; }
 }
 
 /*--------------------------------------------------------------

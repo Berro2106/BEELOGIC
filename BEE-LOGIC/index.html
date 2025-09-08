@@ -307,126 +307,178 @@
        
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <!-- === CARRUSEL DE PILARES (3 por vista con flechas) === -->
+<div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article class="service-item">
-              <span class="service-icon rounded-circle">
-                <i class="bi bi-palette"></i>
-              </span>
-              <h3>
-                <a href="service-details-PP.html">
-                  Planificacion de <span>Produccion</span>
-                </a>
-              </h3>
-              <p>
-                La planificación de la producción permite organizar de forma eficiente las actividades fabriles y 
-                tiempos para cumplir con la demanda del mercado.
-              </p>
-              <a href="service-details-PP.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-            </article>
-          </div>
+  <div class="services-slider swiper init-swiper">
+    <script type="application/json" class="swiper-config">
+      {
+        "loop": false,
+        "speed": 600,
+        "slidesPerView": 3,
+        "spaceBetween": 24,
+        "navigation": {
+          "nextEl": ".services-next",
+          "prevEl": ".services-prev"
+        },
+        "breakpoints": {
+          "0":   { "slidesPerView": 1, "spaceBetween": 16 },
+          "640": { "slidesPerView": 2, "spaceBetween": 20 },
+          "992": { "slidesPerView": 3, "spaceBetween": 24 }
+        }
+      }
+    </script>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-            <article class="service-item">
-              <span class="service-icon rounded-circle">
-                <i class="bi bi-gem"></i>
-              </span>
-              <h3>
-                <a href="service-details-CP.html">
-                  Control <span>de Producción</span>
-                </a>
-              </h3>
-              <p>
-                El control de producción permite supervisar y gestionar el proceso productivo en tiempo real, asegurando el cumplimiento de los objetivos operativos.
-              </p>
-              <a href="service-details-CP.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-            </article>
-          </div>
+    <div class="swiper-wrapper">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <article class="service-item">
-              <span class="service-icon rounded-circle">
-                <i class="bi bi-megaphone"></i>
-              </span>
-              <h3>
-                <a href="service-details-MI.html">
-                  Mantenimiento <span>Industrial</span>
-                </a>
-              </h3>
-              <p>
-                La gestión de mantenimiento asegura la disponibilidad y confiabilidad de los equipos productivos, minimizando tiempos de inactividad y costos por fallas.
-              </p>
-              <a href="service-details-MI.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-            </article>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
-            <article class="service-item">
-              <span class="service-icon rounded-circle">
-                <i class="bi bi-code-slash"></i>
-              </span>
-              <h3>
-                <a href="service-details-CC.html">
-                  Control <span>de Calidad</span>
-                </a>
-              </h3>
-              <p>
-                El control de calidad permite asegurar que cada producto cumpla con los estándares definidos, detectando errores a tiempo y reduciendo el reproceso.
-              </p>
-              <a href="service-details-CC.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-            </article>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article class="service-item">
-              <span class="service-icon rounded-circle">
-                <i class="bi bi-graph-up"></i>
-              </span>
-              <h3>
-                <a href="service-details-T.html">
-                  Trazabilidad <span></span>
-                </a>
-              </h3>
-              <p>
-                La trazabilidad permite conocer en todo momento el origen, transformación y destino de cada unidad de producto a lo largo de la cadena productiva.
-              </p>
-              <a href="service-details-T.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-            </article>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
-            <article class="service-item">
-              <span class="service-icon rounded-circle">
-                <i class="bi bi-camera-video"></i>
-              </span>
-              <h3>
-                <a href="service-details-LCS.html">
-                   Logística <span>y Cadena de Suministro</span>
-                </a>
-              </h3>
-              <p>
-                La logística integrada permite planificar, controlar y optimizar el flujo de materiales e insumos dentro y fuera de la planta productiva.
-              </p>
-              <a href="service-details-LCS.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-            </article>
-          </div>
-        </div>
-
+      <!-- Slide 1 -->
+      <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+        <article class="service-item">
+          <span class="service-icon rounded-circle">
+            <i class="bi bi-palette"></i>
+          </span>
+          <h3>
+            <a href="service-details-PP.html">
+              Planificacion de <span>Produccion</span>
+            </a>
+          </h3>
+          <p>
+            La planificación de la producción permite organizar de forma eficiente las actividades fabriles y 
+            tiempos para cumplir con la demanda del mercado.
+          </p>
+          <a href="service-details-PP.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
       </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide" data-aos="fade-up" data-aos-delay="150">
+        <article class="service-item">
+          <span class="service-icon rounded-circle">
+            <i class="bi bi-gem"></i>
+          </span>
+          <h3>
+            <a href="service-details-CP.html">
+              Control <span>de Producción</span>
+            </a>
+          </h3>
+          <p>
+            El control de producción permite supervisar y gestionar el proceso productivo en tiempo real, asegurando el cumplimiento de los objetivos operativos.
+          </p>
+          <a href="service-details-CP.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+        <article class="service-item">
+          <span class="service-icon rounded-circle">
+            <i class="bi bi-megaphone"></i>
+          </span>
+          <h3>
+            <a href="service-details-MI.html">
+              Mantenimiento <span>Industrial</span>
+            </a>
+          </h3>
+          <p>
+            La gestión de mantenimiento asegura la disponibilidad y confiabilidad de los equipos productivos, minimizando tiempos de inactividad y costos por fallas.
+          </p>
+          <a href="service-details-MI.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide" data-aos="fade-up" data-aos-delay="250">
+        <article class="service-item">
+          <span class="service-icon rounded-circle">
+            <i class="bi bi-code-slash"></i>
+          </span>
+          <h3>
+            <a href="service-details-CC.html">
+              Control <span>de Calidad</span>
+            </a>
+          </h3>
+          <p>
+            El control de calidad permite asegurar que cada producto cumpla con los estándares definidos, detectando errores a tiempo y reduciendo el reproceso.
+          </p>
+          <a href="service-details-CC.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+        <article class="service-item">
+          <span class="service-icon rounded-circle">
+            <i class="bi bi-graph-up"></i>
+          </span>
+          <h3>
+            <a href="service-details-T.html">
+              Trazabilidad <span></span>
+            </a>
+          </h3>
+          <p>
+            La trazabilidad permite conocer en todo momento el origen, transformación y destino de cada unidad de producto a lo largo de la cadena productiva.
+          </p>
+          <a href="service-details-T.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="swiper-slide" data-aos="fade-up" data-aos-delay="350">
+        <article class="service-item">
+          <span class="service-icon rounded-circle">
+            <i class="bi bi-camera-video"></i>
+          </span>
+          <h3>
+            <a href="service-details-LCS.html">
+              Logística <span>y Cadena de Suministro</span>
+            </a>
+          </h3>
+          <p>
+            La logística integrada permite planificar, controlar y optimizar el flujo de materiales e insumos dentro y fuera de la planta productiva.
+          </p>
+          <a href="service-details-LCS.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+      </div>
+
+      <!-- Slide 7 -->
+       <div class="swiper-slide" data-aos="fade-up" data-aos-delay="350">
+        <article class="service-item">
+          <span class="service-icon rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </span>
+          <h3>
+            <a href="service-details-Analisis.html">
+              Analisis <span>de Datos</span>
+            </a>
+          </h3>
+          <p>
+            El análisis de datos permite extraer información valiosa de grandes volúmenes de datos, facilitando la toma de decisiones informadas.                            
+          </p>
+          <a href="service-details-Analisis.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+      </div>
+
+    </div>
+
+    <!-- Flechas -->
+    <button class="services-prev swiper-button-prev" aria-label="Anterior"></button>
+    <button class="services-next swiper-button-next" aria-label="Siguiente"></button>
+  </div>
+</div>
 
     </section><!-- /Services Section -->
 
