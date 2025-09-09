@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
 // Usuario Gmail que enviará los correos (debe tener 2FA y contraseña de aplicación)
 const SMTP_USER = 'beelogic433@gmail.com';
 // Pega AQUÍ tu contraseña de aplicación (16 caracteres, sin espacios)
-const SMTP_PASS = 'PON_AQUI_TU_CONTRASENA_DE_APLICACION';
+const SMTP_PASS = 'mndrhplrlacjunig';
 
 // ---------------------------------------------------------
 require __DIR__ . '/../vendor/autoload.php'; // PHPMailer vía Composer
@@ -65,8 +65,8 @@ try {
   $mail->isSMTP();
   $mail->Host       = 'smtp.gmail.com';
   $mail->SMTPAuth   = true;
-  $mail->Username   = 'beelogic433@gmail.com';
-  $mail->Password   = 'mndrhplrlacjunig';
+  $mail->Username   = SMTP_USER; // Tu email Gmail
+  $mail->Password   = SMTP_PASS; // Tu contraseña de aplicación
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port       = 587;
 
