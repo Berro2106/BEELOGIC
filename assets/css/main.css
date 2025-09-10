@@ -60,6 +60,51 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+
+/* ===== Estilos página de Gracias ===== */
+
+.gracias-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: auto;
+}
+
+.gracias-logo {
+  max-width: 180px;
+}
+
+.gracias-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.gracias-text {
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.btn-gracias {
+  background-color: #ffc107;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-gracias:hover {
+  background-color: #e0a800;
+  color: #000;
+}
+
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);

@@ -94,7 +94,7 @@ try {
 
   // Tu plantilla tiene .loading / .error-message / .sent-message.
   // Muchas plantillas esperan 'OK' para mostrar el mensaje de éxito.
-  echo 'OK';
+  header("Location: ../gracias.html");
   exit;
 
 } catch (Exception $e) {
