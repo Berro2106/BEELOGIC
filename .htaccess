@@ -1,0 +1,18 @@
+# --- Fuerza HTTPS en todo el sitio ---
+RewriteEngine On
+
+# Si la conexión NO es HTTPS (directo o detrás de proxy)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# --- (Opcional) Elegir dominio canónico ---
+# Quita el comentario de UNA de estas secciones si quieres un solo host.
+
+# 1) Forzar SIN www (www -> sin www)
+#RewriteCond %{HTTP_HOST} ^www\.beelogicmanufacturing\.com$ [NC]
+#RewriteRule ^ https://beelogicmanufacturing.com%{REQUEST_URI} [R=301,L]
+
+# 2) Forzar CON www (sin www -> www)
+#RewriteCond %{HTTP_HOST} ^beelogicmanufacturing\.com$ [NC]
+#RewriteRule ^ https://www.beelogicmanufacturing.com%{REQUEST_URI} [R=301,L]
