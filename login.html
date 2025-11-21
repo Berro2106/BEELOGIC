@@ -142,9 +142,18 @@
         font-size:12px;
         color:var(--muted);
     }
+    .logo-fixed {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 120px;         /* ajusta el tamaño */
+    z-index: 9999;        /* siempre por encima */
+    user-select: none;
+}
 </style>
 </head>
 <body>
+    <img src="assets/img/beelogiclogogracias.png" class="logo-fixed" alt="logo">
     <main class="card" role="main">
         <h1 id="form-title">Iniciar sesión</h1>
         <p class="lead">Usa tu correo y contraseña para acceder o regístrate si no tienes cuenta.</p>
