@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login / Registro</title>
+ <style>
+    :root {
+        /* Colores BeeLogic-style */
+        --bg:#020617;          /* fondo general bien oscuro, industrial */
+        --card:#0b1220;        /* tarjeta gris-azulada oscura */
+        --accent:#facc15;      /* amarillo abeja principal */
+        --danger:#dc2626;      /* rojo para errores */
+        --muted:#9ca3af;       /* gris texto secundario */
+        font-family:Inter,Roboto,Helvetica,Arial,sans-serif;
+    }
+
+    body {
+        margin:0;
+        min-height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background:linear-gradient(180deg,#020617, #111827 60%);
+        color:#e5e7eb; /* texto principal claro */
+    }
+
+    .card {
+        width:360px;
+        background:var(--card);
+        padding:28px;
+        border-radius:12px;
+        box-shadow:0 12px 40px rgba(0,0,0,0.45);
+        border:1px solid rgba(148,163,184,0.35); /* borde gris sutil */
+    }
+
+    h1 {
+        margin:0 0 12px;
+        font-size:20px;
+        color:#f9fafb;
+    }
+
+    p.lead {
+        margin:0 0 18px;
+        color:var(--muted);
+        font-size:13px;
+    }
+
+    label {
+        display:block;
+        font-size:13px;
+        margin-bottom:6px;
+        color:#e5e7eb;
+    }
+
+    input[type="email"], input[type="password"] {
+        width:100%;
+        padding:10px 12px;
+        border:1px solid #1f2937;
+        border-radius:8px;
+        font-size:14px;
+        box-sizing:border-box;
+        background:#020617;
+        color:#e5e7eb;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+        outline:none;
+        border-color:var(--accent);
+        box-shadow:0 0 0 1px rgba(250,204,21,0.4);
+    }
+
+    .row {
+        margin-bottom:12px;
+    }
+
+    .actions {
+        display:flex;
+        gap:8px;
+        margin-top:10px;
+    }
+
+    button {
+        cursor:pointer;
+        border:0;
+        padding:10px 12px;
+        border-radius:8px;
+        font-weight:600;
+        font-size:14px;
+    }
+
+    .btn-primary {
+        background:var(--accent);
+        color:#111827; /* contraste con el amarillo */
+        flex:1;
+    }
+
+    .btn-primary:hover {
+        filter:brightness(1.05);
+    }
+
+    .btn-outline {
+        background:transparent;
+        color:var(--accent);
+        border:1px solid rgba(250,204,21,0.35);
+        flex:1;
+    }
+
+    .btn-outline:hover {
+        background:rgba(250,204,21,0.06);
+    }
+
+    .muted {
+        font-size:13px;
+        color:var(--muted);
+        text-align:center;
+        margin-top:12px;
+    }
+
+    .toggle {
+        background:none;
+        border:0;
+        color:var(--accent);
+        cursor:pointer;
+        font-weight:600;
+    }
+
+    .error {
+        color:var(--danger);
+        font-size:13px;
+        margin-top:8px;
+    }
+
+    .success {
+        color:#22c55e;
+        font-size:13px;
+        margin-top:8px;
+    }
+
+    .small {
+        font-size:12px;
+        color:var(--muted);
+    }
+</style>
+</head>
+<body>
+    <main class="card" role="main">
+        <h1 id="form-title">Iniciar sesión</h1>
+        <p class="lead">Usa tu correo y contraseña para acceder o regístrate si no tienes cuenta.</p>
+
+        <form id="auth-form" autocomplete="off">
+            <div class="row">
+                <label for="email">Correo electrónico</label>
+                <input id="email" name="email" type="email" required autocomplete="email" placeholder="ejemplo@correo.com" />
+            </div>
+
+            <div class="row" id="password-row">
+                <label for="password">Contraseña</label>
+                <input id="password" name="password" type="password" required autocomplete="current-password" placeholder="Contraseña" />
+            </div>
+
+            <div class="row" id="confirm-row" style="display:none;">
+                <label for="confirm">Confirmar contraseña</label>
+                <input id="confirm" name="confirm" type="password" autocomplete="new-password" placeholder="Confirmar contraseña" />
+            </div>
+
+            <div class="row actions">
+                <button type="submit" class="btn-primary" id="submit-btn">Iniciar sesión</button>
+                <button type="button" class="btn-outline" id="toggle-btn">Registrarse</button>
+            </div>
+
+            <div id="message" role="status" aria-live="polite"></div>
+        </form>
+
+        <p class="muted small">Este ejemplo guarda usuarios en localStorage para desarrollo/local. No usar en producción sin backend seguro.</p>
+    </main>
+
+    <script>
+        const form = document.getElementById('auth-form');
+        const toggleBtn = document.getElementById('toggle-btn');
+        const submitBtn = document.getElementById('submit-btn');
+        const title = document.getElementById('form-title');
+        const confirmRow = document.getElementById('confirm-row');
+        const message = document.getElementById('message');
+
+        let mode = 'login'; // 'login' or 'register'
+
+        function showMessage(text, type='error') {
+            message.textContent = text;
+            message.className = type === 'error' ? 'error' : 'success';
+        }
+
+        function clearMessage() {
+            message.textContent = '';
+            message.className = '';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            if (mode === 'login') {
+                mode = 'register';
+                title.textContent = 'Crear cuenta';
+                submitBtn.textContent = 'Registrarse';
+                toggleBtn.textContent = 'Volver';
+                confirmRow.style.display = 'block';
+                clearMessage();
+            } else {
+                mode = 'login';
+                title.textContent = 'Iniciar sesión';
+                submitBtn.textContent = 'Iniciar sesión';
+                toggleBtn.textContent = 'Registrarse';
+                confirmRow.style.display = 'none';
+                clearMessage();
+            }
+        });
+
+        // Helpers for localStorage
+        const USERS_KEY = 'bee_users_v1';
+        function loadUsers() {
+            try {
+                const raw = localStorage.getItem(USERS_KEY);
+                return raw ? JSON.parse(raw) : [];
+            } catch (e) {
+                return [];
+            }
+        }
+        function saveUsers(users) {
+            localStorage.setItem(USERS_KEY, JSON.stringify(users));
+        }
+
+        // Hash password using SHA-256 (Web Crypto)
+        async function hashPassword(password) {
+            const enc = new TextEncoder();
+            const data = enc.encode(password);
+            const hash = await crypto.subtle.digest('SHA-256', data);
+            return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2,'0')).join('');
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            clearMessage();
+
+            const email = form.email.value.trim().toLowerCase();
+            const password = form.password.value;
+            if (!email || !password) {
+                showMessage('Completa correo y contraseña.');
+                return;
+            }
+
+            if (mode === 'register') {
+                const confirm = form.confirm.value;
+                if (password.length < 6) {
+                    showMessage('La contraseña debe tener al menos 6 caracteres.');
+                    return;
+                }
+                if (password !== confirm) {
+                    showMessage('Las contraseñas no coinciden.');
+                    return;
+                }
+
+                const users = loadUsers();
+                if (users.find(u => u.email === email)) {
+                    showMessage('Ya existe una cuenta con ese correo.');
+                    return;
+                }
+
+                const hashed = await hashPassword(password);
+                users.push({ email, hash: hashed, created: Date.now() });
+                saveUsers(users);
+                showMessage('Registro exitoso. Ya puedes iniciar sesión.', 'success');
+                // switch to login
+                mode = 'login';
+                title.textContent = 'Iniciar sesión';
+                submitBtn.textContent = 'Iniciar sesión';
+                toggleBtn.textContent = 'Registrarse';
+                confirmRow.style.display = 'none';
+                form.password.value = '';
+                form.confirm.value = '';
+            } else {
+                const users = loadUsers();
+                const user = users.find(u => u.email === email);
+                if (!user) {
+                    showMessage('Usuario no encontrado.');
+                    return;
+                }
+                const hashed = await hashPassword(password);
+                if (hashed !== user.hash) {
+                    showMessage('Contraseña incorrecta.');
+                    return;
+                }
+                showMessage('Acceso exitoso.', 'success');
+                // Aquí puedes redirigir o mostrar contenido de sesión iniciada.
+            }
+        });
+    </script>
+</body>
+</html>
